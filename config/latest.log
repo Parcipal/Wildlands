@@ -1,0 +1,68 @@
+[12:51:44] [Server thread/INFO]: Starting minecraft server version 1.12.2
+[12:53:19] [Server thread/INFO]: Loading properties
+[12:53:19] [Server thread/INFO]: Default game type: SURVIVAL
+[12:53:19] [Server thread/INFO]: Generating keypair
+[12:53:19] [Server thread/INFO]: Starting Minecraft server on *:25565
+[12:53:19] [Server thread/INFO]: Using epoll channel type
+[12:53:38] [Server thread/ERROR]: Encountered an unexpected exception
+net.minecraftforge.fml.common.LoaderExceptionModCrash: Caught exception from JourneyMap (journeymap)
+
+Caused by: java.lang.NoSuchMethodError: net.minecraft.world.GameType.func_77142_a(Ljava/lang/String;)Lnet/minecraft/world/GameType;
+	at journeymap.common.properties.config.GsonHelper$PolicyTableSerializer.deserialize(GsonHelper.java:542) ~[GsonHelper$PolicyTableSerializer.class:1.12.2-5.6.0b2]
+	at journeymap.common.properties.config.GsonHelper$PolicyTableSerializer.deserialize(GsonHelper.java:458) ~[GsonHelper$PolicyTableSerializer.class:1.12.2-5.6.0b2]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.read(ReflectiveTypeAdapterFactory.java:129) ~[ReflectiveTypeAdapterFactory$1.class:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:220) ~[ReflectiveTypeAdapterFactory$Adapter.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:852) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:801) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:773) ~[Gson.class:?]
+	at journeymap.common.properties.PropertiesBase.fromJsonString(PropertiesBase.java:123) ~[PropertiesBase.class:1.12.2-5.6.0b2]
+	at journeymap.common.properties.PropertiesBase.load(PropertiesBase.java:199) ~[PropertiesBase.class:1.12.2-5.6.0b2]
+	at journeymap.common.properties.PropertiesBase.load(PropertiesBase.java:172) ~[PropertiesBase.class:1.12.2-5.6.0b2]
+	at journeymap.server.properties.PropertiesManager.<init>(PropertiesManager.java:53) ~[PropertiesManager.class:1.12.2-5.6.0b2]
+	at com.google.common.base.Suppliers$NonSerializableMemoizingSupplier.get(Suppliers.java:160) ~[minecraft_server.1.12.2.jar:?]
+	at journeymap.server.properties.PropertiesManager.getInstance(PropertiesManager.java:39) ~[PropertiesManager.class:1.12.2-5.6.0b2]
+	at journeymap.server.JourneymapServer.initialize(JourneymapServer.java:112) ~[JourneymapServer.class:1.12.2-5.6.0b2]
+	at journeymap.server.JourneymapServer.initialize(JourneymapServer.java:97) ~[JourneymapServer.class:1.12.2-5.6.0b2]
+	at journeymap.common.Journeymap.initialize(Journeymap.java:141) ~[Journeymap.class:1.12.2-5.6.0b2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_151]
+	at net.minecraftforge.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:606) ~[forge-1.12.2-14.23.1.2607-universal.jar:?]
+	at sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_151]
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:91) ~[minecraft_server.1.12.2.jar:?]
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:150) ~[minecraft_server.1.12.2.jar:?]
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:76) ~[minecraft_server.1.12.2.jar:?]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399) ~[minecraft_server.1.12.2.jar:?]
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:71) ~[minecraft_server.1.12.2.jar:?]
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:116) ~[minecraft_server.1.12.2.jar:?]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:217) ~[minecraft_server.1.12.2.jar:?]
+	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:278) ~[forge-1.12.2-14.23.1.2607-universal.jar:?]
+	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:256) ~[forge-1.12.2-14.23.1.2607-universal.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_151]
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:91) ~[minecraft_server.1.12.2.jar:?]
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:150) ~[minecraft_server.1.12.2.jar:?]
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:76) ~[minecraft_server.1.12.2.jar:?]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399) ~[minecraft_server.1.12.2.jar:?]
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:71) ~[minecraft_server.1.12.2.jar:?]
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:116) ~[minecraft_server.1.12.2.jar:?]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:217) ~[minecraft_server.1.12.2.jar:?]
+	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:148) ~[LoadController.class:?]
+	at net.minecraftforge.fml.common.Loader.initializeMods(Loader.java:720) ~[Loader.class:?]
+	at net.minecraftforge.fml.server.FMLServerHandler.finishServerLoading(FMLServerHandler.java:107) ~[FMLServerHandler.class:?]
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStarted(FMLCommonHandler.java:337) ~[FMLCommonHandler.class:?]
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:219) ~[nz.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:484) [MinecraftServer.class:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_151]
+[12:53:38] [Server thread/ERROR]: This crash report has been saved to: /home/minecraft/./crash-reports/crash-2018-01-31_12.53.38-server.txt
+[12:53:38] [Server thread/INFO]: Stopping server
+[12:53:38] [Server thread/INFO]: Saving worlds
+[12:53:39] [Server Shutdown Thread/INFO]: Stopping server
+[12:53:39] [Server Shutdown Thread/INFO]: Saving worlds
