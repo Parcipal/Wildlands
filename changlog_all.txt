@@ -1,0 +1,126 @@
+Changelog 0.0.6.1: Hotfix
+
+
+-Fixed: Artisans.zs script file error
+
+Changelog 0.0.6: we’re getting there
+
+
+First of: A quick apology for my Update cycle, it’s was not that great during the last days, but changing recipes for an hour is already exhausting enough. But I’m still out there and I’m still doing headsho… oh wait wrong theme!
+Anyways… Last Big Update for Industry/Tech mods, after that we’re shifting our attention on the magical aspect!
+
+-Added: Career Bees (Even more Things for your Bees to do!)
+-Added: Lag Goggles (This is pretty much for you Lag hunters out there, report anything that’s really suspicious to me :>)
+
+
+-Updated: Dynamic Surroundings
+-Updated: Cyclops Core
+-Updated: EvilCraft
+-Updated: Dropt
+
+
+-Changed: Most Industrial Stuff is integrated into Worktables
+-Changed: Started to work on some better Magic Gating
+-Changed: Properly Gated Forestry
+-Changed: Made some more TE Machinery available
+-Changed: Made some MEK Machinery Available
+
+-Fixed: Better Recipe for Pistons
+
+Changelog 0.0.5: Just casually skipping 0.0.4
+
+-Added: Athenaeum
+-Added: Dropt
+-Added: Artisan Worktables
+-Added: Norsecraft
+-Added: Cooking for Blockheads
+-Added: Nutritions
+-Added: EvilCraft
+
+-Removed: Terraqueous
+-Removed Mystical Agriculture
+
+-Updated: Dynamic Trees
+-Updated: CraftTweaker
+-Updated: Totemic
+-Updated: Pam’s Harvestcraft
+-Updated: Better With Engineering
+
+-Changed: You require certain types of Worktables to craft certain items now!
+-Changed: Cobblestone will drop when using certain Pickaxes now (Not yet implemented [sowwy :(])
+-Changed: Rustic recipes are properly balanced now, allowing you to skip 0%! (if you still happen to find skips, let me know!)
+-Changed: MEK is now proper endgame content
+-Changed: Continued Tweaks on Thermal Expansion and any associated Pipes
+-Changed: Tweaked Buildcraft and Forestry Recipes
+-Changed: All your Nutrition belongs to us now -> You need to eat different food (1st attempt at rebalancing food)
+
+-Fixed: You can’t skip content through using rustic means (See #3 on Changed)
+-Fixed: Trees are not gonna take over the world anymore
+-Fixed: Flowers and tall grass will not take over too (See #1 on Removed)
+-Fixed: MEK Skipping content (See #4 on Changed)
+-Fixed: Trees should now drop sawdust again, fixing a gamebreaking bug when making a firestarter
+
+Changelog 0.0.3.1: not as much Performance Update
+
+-Added: Buildcraft
+-Added: BetterFPS
+-Added FoamFix
+-Added Magic Bees
+-Added Binnies Mods
+
+-Removed: OreExcavation
+-Removed: Minecraft Comes alive
+
+-Changed: Removed old recipes for BWM (slightly more progress needed, not final yet)
+-Changed: Soulforged Steel and Steel are now properly oredict'ed to one another
+-Changed: Any ore will only Output 36mb Liquid Metal
+-Changed:  Removed old smelting amount of 32mb for Geolosys Clusters
+-Changed: Tweaked Animania config to stop overpopulation
+-Changed: Made basic TE machinery slightly more expensive and gated after Steel
+-Changed: Redstone Furnaces will allow you to skip some BWM setup you had before (making pottery available through furnace recipe, but no real oredoubling)
+-Changed: More BWM recipe Changes
+
+Changelog 0.0.3: Performance Update
+
+-Added: Buildcraft
+-Added: BetterFPS
+-Added FoamFix
+
+-Removed: OreExcavation
+-Removed: Minecraft Comes alive
+
+-Changed: Removed old recipes for BWM (slightly more progress needed, not final yet)
+-Changed: Soulforged Steel and Steel are now properly oredict'ed to one another
+-Changed: Any ore will only Output 36mb Liquid Metal
+-Changed:  Removed old smelting amount of 32mb for Geolosys Clusters
+-Changed: Tweaked Animania config to stop overpopulation
+-Changed: Made basic TE machinery slightly more expensive and gated after Steel
+-Changed: Redstone Furnaces will allow you to skip some BWM setup you had before (making pottery available through furnace recipe, but no real oredoubling)
+
+Changelog 0.0.2:
+
+-Added: Better with Engineering
+-Added: Bamboozled
+-Added: OpenComputers
+-Added: Appleskin
+-Added: Steammotion
+
+-Changed: Oreberries only output 1mb Liquid and should only be meltable in a Smeltery
+-Changed: Ores/Dust are now unified within a Smeltery (other furnace recipes are still WIP)
+-Changed: Grout Recipe
+
+Fixed: Yet another attempt at fixing BWM/Applecore interactions (we'll have it balanced at some  point)
+
+Changelog 0.0.1:
+
+-Added: Ceramics
+-Added: Charcoal Pit (for the real TFC charcoal pit feeling)
+-Added: PlusTiC
+-Added: Dynamic Trees
+-Added: Geolosys
+
+-Changed: Most BWM machines have a changed crafting recipe (substituted normal Planks for Treated Wood Planks; Stone/Stonebricks/Cobblestone for Caminite Brick Blocks
+
+-Fixed: Reverted the BWM/Applecore Interaction to hopefully fix the food issue
+-Fixed: Cobble doesn't require clay anymore, still looking into ways to introduce custom drops on mining
+

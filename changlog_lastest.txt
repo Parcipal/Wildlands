@@ -1,0 +1,28 @@
+Changelog 0.0.6.1: Hotfix
+
+-Fixed: Artisans.zs script file error
+
+Changelog 0.0.6: we’re getting there
+
+
+First of: A quick apology for my Update cycle, it’s was not that great during the last days, but changing recipes for an hour is already exhausting enough. But I’m still out there and I’m still doing headsho… oh wait wrong theme!
+Anyways… Last Big Update for Industry/Tech mods, after that we’re shifting our attention on the magical aspect!
+
+-Added: Career Bees (Even more Things for your Bees to do!)
+-Added: Lag Goggles (This is pretty much for you Lag hunters out there, report anything that’s really suspicious to me :>)
+
+
+-Updated: Dynamic Surroundings
+-Updated: Cyclops Core
+-Updated: EvilCraft
+-Updated: Dropt
+
+
+-Changed: Most Industrial Stuff is integrated into Worktables
+-Changed: Started to work on some better Magic Gating
+-Changed: Properly Gated Forestry
+-Changed: Made some more TE Machinery available
+-Changed: Made some MEK Machinery Available
+
+-Fixed: Better Recipe for Pistons
+
