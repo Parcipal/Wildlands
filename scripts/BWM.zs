@@ -37,7 +37,8 @@ for w in (0 to 10){
 	mods.artisanworktables.Worktable.addRecipeShaped("carpenter", <betterwithmods:wooden_axle>, <ore:carpenters_handsaw>, 20, false, [[<ore:plankTreatedWood>], [<betterwithmods:rope>], [<ore:plankTreatedWood>]]);
 	mods.artisanworktables.Worktable.addRecipeShaped("carpenter", <betterwithmods:single_machine:1>, <ore:carpenters_hammer>, 20, false, [[<ore:plankTreatedWood>, <betterwithmods:wooden_gearbox>, <ore:ingotIron>], [<ore:gearWood>, <betterwithmods:material:34>, <ore:gearWood>], [<ore:ingotIron>, <betterwithmods:wooden_axle>, <ore:plankTreatedWood>]]);
 	mods.artisanworktables.Worktable.addRecipeShaped("carpenter", <betterwithmods:single_machine:2>, <ore:carpenters_hammer>, 20, false, [[<ore:sidingTreatedWood>, null, <ore:sidingTreatedWood>], [<ore:gearWood>, <minecraft:wooden_pressure_plate>, <ore:gearWood>], [null, <ore:cornerTreatedWood>, null]]);
-
+	mods.artisanworktables.Worktable.addRecipeShaped("carpenter", <betterwithmods:wooden_gearbox>, <ore:carpenters_hammer>, 20, false, [[<ore:plankTreatedWood>, <ore:gearWood>, <ore:plankTreatedWood>], [<ore:gearWood>, <betterwithmods:material:34>, <ore:gearWood>], [<ore:plankTreatedWood>, <ore:gearWood>, <ore:plankTreatedWood>]]);
+	
 	//Crafting Table
 	mods.artisanworktables.Worktable.addRecipeShaped("basic", <minecraft:piston>, <ore:masons_chisel>, 20, false, [[<ore:woodSiding>, <minecraft:iron_ingot>, <ore:woodSiding>], [<ore:cobblestone>, <ore:ingotSteel>, <ore:cobblestone>], [<ore:cobblestone>, <betterwithmods:material:34>, <ore:cobblestone>]]);
 	mods.artisanworktables.Worktable.addRecipeShaped("basic", <betterwithmods:single_machine>, <ore:masons_chisel>, 20, false, [[<embers:block_caminite_brick>, <betterwithmods:wooden_gearbox>, <embers:block_caminite_brick>], [<embers:block_caminite_brick>, <ore:gearWood>, <embers:block_caminite_brick>], [<embers:block_caminite_brick>, <embers:block_caminite_brick>, <embers:block_caminite_brick>]]);
