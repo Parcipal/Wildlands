@@ -24,10 +24,13 @@ recipes.remove(<artisanworktables:carpenters_hammer_stone>);
 recipes.remove(<artisanworktables:carpenters_hammer_wood>);
 
 //Parcipals changes to Worktables
-recipes.addShaped(<artisanworktables:worktable:2>, [[<minecraft:brick>, <minecraft:stone_slab>, <minecraft:brick>], [<minecraft:brick>, <minecraft:brick>, <minecraft:brick>], [<minecraft:stone_slab:3>, <minecraft:cobblestone>, <minecraft:stone_slab:3>]]);
 recipes.addShaped(<artisanworktables:worktable:1>, [[<minecraft:planks:*>, <minecraft:stone_slab>, <minecraft:planks:*>], [<minecraft:planks:*>, <minecraft:planks:*>, <minecraft:planks:*>], [<minecraft:stone_slab:3>, <minecraft:cobblestone>, <minecraft:stone_slab:3>]]);
-recipes.addShaped(<artisanworktables:worktable:3>, [[<ore:ingotIron>, <ore:plateSteel>, <ore:ingotIron>], [<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],[<minecraft:stone_slab:3>, <minecraft:cobblestone>, <minecraft:stone_slab:3>]]);
+recipes.addShaped(<artisanworktables:worktable:2>, [[<minecraft:brick>, <minecraft:stone_slab>, <minecraft:brick>], [<minecraft:brick>, <minecraft:brick>, <minecraft:brick>], [<minecraft:stone_slab:3>, <minecraft:cobblestone>, <minecraft:stone_slab:3>]]);
+recipes.addShaped(<artisanworktables:worktable:3>, [[<minecraft:iron_ingot>, <ore:plateSteel>, <minecraft:iron_ingot>], [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],[<minecraft:stone_slab:3>, <minecraft:cobblestone>, <minecraft:stone_slab:3>]]);
 recipes.addShaped(<artisanworktables:worktable:5>, [[<ore:plankWood>, <ore:craftingTableWood>, <ore:plankWood>], [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], [<minecraft:stone_slab:3>, <minecraft:cobblestone>, <minecraft:stone_slab:3>]]);
+
+recipes.remove(<artisanworktables:worktable:3>);
+recipes.remove(<artisanworktables:worktable:5>);
 
 //Parcipals changes to Bricks
 mods.artisanworktables.Worktable.addRecipeShaped("mason", <tconstruct:seared:3> * 4, <ore:masons_trowel>, 5, false, [[<tconstruct:materials>, <earthworks:item_lime_plaster>, <tconstruct:materials>], [<earthworks:item_lime_plaster>, <tconstruct:materials>, <earthworks:item_lime_plaster>], [<tconstruct:materials>, <earthworks:item_lime_plaster>, <tconstruct:materials>]]);
