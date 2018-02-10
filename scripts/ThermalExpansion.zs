@@ -5,12 +5,40 @@ import crafttweaker.oredict.IOreDictEntry;
 
 //Artisan Worktable Tweaks
 	//Blacksmith
-val IngotArray = [<ore:ingotIron>, <ore:ingotGold>, <ore:ingotCopper>, <ore:ingotTin>, <ore:ingotSilver>, <ore:ingotLead>, <ore:ingotAluminum>, <ore:ingotNickel>, <ore:ingotPlatinum>, <ore:ingotIridium>, <ore:ingotMithril>, <ore:ingotSteel>, <ore:ingotElectrum>, <ore:ingotInvar>, <ore:ingotBronze>, <ore:Constantan>, <ore:ingotSignalum>, <ore:ingotLumium>, <ore:ingotEnderium>] as IOreDictEntry[];
-val PlateArray = [<thermalfoundation:material:32>, <thermalfoundation:material:33>, <thermalfoundation:material:320>, <thermalfoundation:material:321>, <thermalfoundation:material:322>, <thermalfoundation:material:323>, <thermalfoundation:material:324>, <thermalfoundation:material:325>, <thermalfoundation:material:326>, <thermalfoundation:material:327>, <thermalfoundation:material:328>, <thermalfoundation:material:352>, <thermalfoundation:material:353>, <thermalfoundation:material:354>, <thermalfoundation:material:355>, <thermalfoundation:material:356>, <thermalfoundation:material:357>, <thermalfoundation:material:358>, <thermalfoundation:material:359>] as IItemStack[];
+val plateIngots = {
+    <thermalfoundation:material:33> : <ore:ingotGold>,
+    <thermalfoundation:material:320> : <ore:ingotCopper>,
+    <thermalfoundation:material:321> : <ore:ingotTin>,
+    <thermalfoundation:material:322> : <ore:ingotSilver>,
+    <thermalfoundation:material:323> : <ore:ingotLead>,
+    <thermalfoundation:material:324> : <ore:ingotAluminum>,
+    <thermalfoundation:material:325> : <ore:ingotNickel>,
+    <thermalfoundation:material:326> : <ore:ingotPlatinum>,
+    <thermalfoundation:material:327> : <ore:ingotIridium>,
+    <thermalfoundation:material:328> : <ore:ingotMithril>,
+    <thermalfoundation:material:352> : <ore:ingotSteel>,
+    <thermalfoundation:material:353> : <ore:ingotElectrum>,
+    <thermalfoundation:material:354> : <ore:ingotInvar>,
+    <thermalfoundation:material:355> : <ore:ingotBronze>,
+    <thermalfoundation:material:356> : <ore:Constantan>,
+    <thermalfoundation:material:357> : <ore:ingotSignalum>,
+    <thermalfoundation:material:358> : <ore:ingotLumium>,
+    <thermalfoundation:material:359> : <ore:ingotEnderium>
+} as IIngredient[IItemStack];
 
-for i in (0 to 18){
-	mods.artisanworktables.Worktable.addRecipeShaped("blacksmith", PlateArray[i], <ore:blacksmiths_hammer>, 5, false, [[IngotArray[i], IngotArray[i], IngotArray[i]], [IngotArray[i]]]);
-	}
+val plateRecipeBuilder = {} as IRecipeBuilder[IItemStack];
+
+for plate, ingot in plateIngots {
+    plateRecipeBuilder[plate] = Worktable.createRecipeBuilder("blacksmith") as IRecipeBuilder;
+    plateRecipeBuilder[plate].setShaped([
+        [ingot],
+        [ingot],
+        [ingot]
+    ])
+    .addTool(<ore:blacksmiths_hammer>, 5)
+    .addOutput(plate)
+    .create();
+}
 
 mods.artisanworktables.Worktable.addRecipeShaped("blacksmith", <thermalexpansion:frame>, <ore:blacksmiths_hammer>, 20, false, [[<ore:ingotSteel>, <buildcraftfactory:tank>, <ore:ingotSteel>], [<buildcraftfactory:tank>, <thermalfoundation:material:288>, <buildcraftfactory:tank>], [<ore:ingotSteel>, <buildcraftfactory:tank>, <ore:ingotSteel>]]);
 
