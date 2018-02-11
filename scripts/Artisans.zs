@@ -28,6 +28,7 @@ recipes.addShaped(<artisanworktables:worktable:1>, [[<minecraft:planks:*>, <mine
 recipes.addShaped(<artisanworktables:worktable:2>, [[<minecraft:brick>, <minecraft:stone_slab>, <minecraft:brick>], [<minecraft:brick>, <minecraft:brick>, <minecraft:brick>], [<minecraft:stone_slab:3>, <minecraft:cobblestone>, <minecraft:stone_slab:3>]]);
 recipes.addShaped(<artisanworktables:worktable:3>, [[<minecraft:iron_ingot>, <ore:plateSteel>, <minecraft:iron_ingot>], [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],[<minecraft:stone_slab:3>, <minecraft:cobblestone>, <minecraft:stone_slab:3>]]);
 recipes.addShaped(<artisanworktables:worktable:5>, [[<ore:plankWood>, <ore:craftingTableWood>, <ore:plankWood>], [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], [<minecraft:stone_slab:3>, <minecraft:cobblestone>, <minecraft:stone_slab:3>]]);
+recipes.addShaped(<artisanworktables:worktable:6>, [[<ore:ingotCopper>, <ore:plateSteel>, <ore:ingotCopper>], [<minecraft:iron_ingot>, <ore:ingotCopper>, <minecraft:iron_ingot>],[<minecraft:stone_slab:3>, <minecraft:cobblestone>, <minecraft:stone_slab:3>]]);
 
 recipes.remove(<artisanworktables:worktable:3>);
 recipes.remove(<artisanworktables:worktable:5>);
