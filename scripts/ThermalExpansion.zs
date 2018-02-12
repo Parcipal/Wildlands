@@ -46,7 +46,7 @@ val plateIngots = {
     Worktable.createRecipeBuilder("blacksmith")
         .setShaped([
             [<betterwithmods:material:34>, <minecraft:bucket>, <minecraft:iron_ingot>],
-            [<ore:gearIron>, <thermaldynamics:servo>, <ore:gearIron>],
+            [<ore:gearIron>, null, <ore:gearIron>],
             [<minecraft:iron_ingot>, <minecraft:bucket>, <betterwithmods:material:34>]])
         .addTool(<ore:blacksmiths_hammer>, 20)
         .addOutput(<thermaldynamics:servo> * 2)
