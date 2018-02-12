@@ -14,6 +14,15 @@ import crafttweaker.oredict.IOreDictEntry;
     	.addTool(<ore:carpenters_hammer>, 20)
     	.addOutput(<forestry:apiary>)
     	.create();
+    Worktable.createRecipeBuilder("carpenter")
+        .setShaped([
+            [<ore:sidingWood>, <ore:sidingWood>, <ore:sidingWood>],
+            [<ore:plankWood>, <betterwithmods:material:41>, <ore:plankWood>],
+            [<ore:plankWood>, <ore:plankTreatedWood>, <ore:plankWood>]])
+        .setFluid(<liquid:seed.oil> * 500)
+        .addTool(<ore:carpenters_hammer>, 20)
+        .addOutput(<forestry:apiary>)
+        .create();
 
     recipes.remove(<forestry:impregnated_casing>);
     Worktable.createRecipeBuilder("carpenter")
