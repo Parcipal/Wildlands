@@ -212,6 +212,30 @@ val plateIngots = {
         .addOutput(<thermalexpansion:machine:3>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [3, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte}))
         .create();  
 
+    recipes.remove(<thermalexpansion:machine:5>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte}));
+    Worktable.createRecipeBuilder("engineer")
+        .setShaped([
+            [<minecraft:piston>, <minecraft:chest>, <minecraft:piston>],
+            [<thermaldynamics:servo>, <thermalexpansion:frame>, <thermaldynamics:servo>],
+            [<immersiveengineering:sheetmetal:1>, <thermalfoundation:material:515>, <immersiveengineering:sheetmetal:1>]])e
+        .setFluid(<liquid:tin> * 144)
+        .addTool(<ore:blacksmiths_hammer>, 250)
+        .addOutput(<thermalexpansion:machine:5>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte}))
+        .create();
+
+    recipes.remove(<thermalexpansion:machine:6>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte}));
+    Worktable.createRecipeBuilder("engineer")
+        .setShaped([
+            [<minecraft:chest>, <thermaldynamics:servo>, <thermalexpansion:machine:6>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte})e],
+            [<thermaldynamics:servo>, <thermalexpansion:frame>, <thermaldynamics:servo>],
+            [<immersiveengineering:sheetmetal:1>, <thermalfoundation:material:515>, <immersiveengineering:sheetmetal:1>]])e
+        .setFluid(<liquid:tin> * 144)
+        .addTool(<ore:blacksmiths_hammer>, 250)
+        .addOutput(<thermalexpansion:machine:6>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte}))
+        .create();
+
+
+
     recipes.remove(<thermalexpansion:machine:15>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte}));
     Worktable.createRecipeBuilder("engineer")
         .setShaped([
