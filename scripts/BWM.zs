@@ -17,6 +17,8 @@ val Steel = <ore:ingotSteel>;
 Steel.add(<betterwithmods:material:14>);
 SoulSteel.add(<thermalfoundation:material:160>);
 
+val BarkRootsArray = 
+
 //Artisan Crafting Tweaks
 	//Handsaw
 	val WoodArray = [<immersiveengineering:treated_wood>, <immersiveengineering:treated_wood:1>, <immersiveengineering:treated_wood:2>, <rustic:planks>, <rustic:planks:1>, <minecraft:planks>,<minecraft:planks:1> , <minecraft:planks:2>, <minecraft:planks:3>, <minecraft:planks:4>, <minecraft:planks:5>] as IItemStack[];
@@ -28,19 +30,19 @@ SoulSteel.add(<thermalfoundation:material:160>);
 		Worktable.createRecipeBuilder("carpenter")
     		.setShaped([
         	[WoodArray[w]]])
-        	.addTool(<ore:carpenters_saw>, 5)
+        	.addTool(<ore:carpenters_handsaw>, 5)
     		.addOutput(SidingArray[w] * 2)
     		.create();
 		Worktable.createRecipeBuilder("carpenter")
     		.setShaped([
         	[SidingArray[w]]])
-        	.addTool(<ore:carpenters_saw>, 5)
+        	.addTool(<ore:carpenters_handsaw>, 5)
     		.addOutput(MouldingArray[w] * 2)
     		.create();
 		Worktable.createRecipeBuilder("carpenter")
     		.setShaped([
         	[MouldingArray[w]]])
-        	.addTool(<ore:carpenters_saw>, 5)
+        	.addTool(<ore:carpenters_handsaw>, 5)
     		.addOutput(CornerArray[w] * 2)
     		.create();
 		}
