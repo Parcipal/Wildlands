@@ -142,6 +142,16 @@ val plateIngots = {
             [<thermalexpansion:capacitor>.withTag({Energy: 0}), <betterwithmods:material:34>, <thermalexpansion:capacitor>.withTag({Energy: 0})]])
         .addTool(<ore:blacksmiths_hammer>, 20)
         .addOutput(<thermalexpansion:cell>.withTag({Recv: 1000, RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [2, 1, 1, 1, 1, 1] as byte[] as byte[], Level: 0 as byte, Send: 1000}))
+        .create();
+
+    recipes.remove(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 0 as byte}));
+    Worktable.createRecipeBuilder("engineer")
+        .setShaped([
+            [<ore:plateCopper>, <thermalfoundation:material:512>, <ore:plateCopper>],
+            [<ore:paneGlass>, <minecraft:bucket>, <ore:paneGlass>],
+            [<ore:plateCopper>, <thermalfoundation:material:512>, <ore:plateCopper>]])
+        .addTool(<ore:blacksmiths_hammer>, 20)
+        .addOutput(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 0 as byte}))
         .create();       
 
 //Thermal Expansion Machinery
@@ -165,7 +175,7 @@ val plateIngots = {
             [<immersiveengineering:stone_decoration:2>, <thermalexpansion:frame>, <immersiveengineering:stone_decoration:2>],
             [<immersiveengineering:sheetmetal:1>, <thermalfoundation:material:513>, <immersiveengineering:sheetmetal:1>]])
         .setFluid(<liquid:tin> * 144)
-        .addTool(<ore:blacksmiths_hammer>, 251)
+        .addTool(<ore:blacksmiths_hammer>, 250)
         .addOutput(<thermalexpansion:machine>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte}))
         .create();
 
@@ -176,7 +186,7 @@ val plateIngots = {
             [<betterwithmods:single_machine>, <thermalexpansion:frame>, <betterwithmods:single_machine>],
             [<immersiveengineering:sheetmetal:1>, <thermalfoundation:material:513>, <immersiveengineering:sheetmetal:1>]])
         .setFluid(<liquid:tin> * 144)
-        .addTool(<ore:blacksmiths_hammer>, 251)
+        .addTool(<ore:blacksmiths_hammer>, 250)
         .addOutput(<thermalexpansion:machine:1>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [3, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte}))
         .create();     
 
@@ -187,7 +197,7 @@ val plateIngots = {
             [<ore:gearSteel>, <thermalexpansion:frame>, <ore:gearSteel>],
             [<immersiveengineering:sheetmetal:1>, <thermalfoundation:material:513>, <immersiveengineering:sheetmetal:1>]])
         .setFluid(<liquid:tin> * 144)
-        .addTool(<ore:blacksmiths_hammer>, 251)
+        .addTool(<ore:blacksmiths_hammer>, 250)
         .addOutput(<thermalexpansion:machine:2>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [3, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte}))
         .create();  
 
@@ -198,7 +208,7 @@ val plateIngots = {
             [<thermalfoundation:material:515>, <thermalexpansion:frame>, <thermalfoundation:material:515>],
             [<immersiveengineering:sheetmetal:1>, <thermalfoundation:material:513>, <immersiveengineering:sheetmetal:1>]])
         .setFluid(<liquid:invar> * 144)
-        .addTool(<ore:blacksmiths_hammer>, 251)
+        .addTool(<ore:blacksmiths_hammer>, 250)
         .addOutput(<thermalexpansion:machine:3>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [3, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte}))
         .create();  
 
@@ -209,7 +219,7 @@ val plateIngots = {
             [<thermaldynamics:servo>, <thermalexpansion:frame>, <thermaldynamics:servo>],
             [<immersiveengineering:sheetmetal:1>, <thermalfoundation:material:513>, <immersiveengineering:sheetmetal:1>]])
         .setFluid(<liquid:tin> * 144)
-        .addTool(<ore:blacksmiths_hammer>, 251)
+        .addTool(<ore:blacksmiths_hammer>, 250)
         .addOutput(<thermalexpansion:machine:15>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte}))
         .create();  
 
@@ -245,6 +255,17 @@ val plateIngots = {
         .addOutput(<thermalfoundation:material:515> * 2)
         .create();
 
+    recipes.remove(<thermalexpansion:capacitor>.withTag({Energy: 0}));
+    Worktable.createRecipeBuilder("engineer")
+        .setShaped([
+            [<betterwithmods:material:34>, <ore:dustSulfur>, <ore:ingotLead>],
+            [<ore:plateCopper>, <ore:nuggetLead>, <ore:plateCopper>],
+            [<ore:ingotLead>, <ore:dustSulfur>, <betterwithmods:material:34>]])
+        .setFluid(<liquid:tin> * 144)
+        .addTool(<ore:blacksmiths_hammer>, 50)
+        .addOutput(<thermalexpansion:capacitor>.withTag({Energy: 0}))
+        .create();
+
 //Thermal Expansion Energy Generation
     //Engineer
     recipes.remove(<thermalexpansion:dynamo>.withTag({RSControl: 0 as byte, Facing: 1 as byte, Energy: 0, Level: 0 as byte}));
@@ -256,7 +277,9 @@ val plateIngots = {
         .setFluid(<liquid:tin> * 144)
         .addTool(<ore:blacksmiths_hammer>, 251)
         .addOutput(<thermalexpansion:dynamo>.withTag({RSControl: 0 as byte, Facing: 1 as byte, Energy: 0, Level: 0 as byte}))
-        .create(); 
+        .create();
+
+
 
 //Removed Recipes (currently locked)
 
