@@ -17,7 +17,7 @@ val Steel = <ore:ingotSteel>;
 Steel.add(<betterwithmods:material:14>);
 SoulSteel.add(<thermalfoundation:material:160>);
 
-val BarkRootsArray = 
+val BarkRootsArray = [<roots:bark_oak>, <roots:bark_spruce>, <roots:bark_birch>, <roots:bark_jungle>, <roots:bark_dark_oak>, <roots:bark_acacia>] as IItemStack[];
 
 //Artisan Crafting Tweaks
 	//Handsaw

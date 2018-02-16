@@ -217,7 +217,7 @@ val plateIngots = {
         .setShaped([
             [<minecraft:piston>, <minecraft:chest>, <minecraft:piston>],
             [<thermaldynamics:servo>, <thermalexpansion:frame>, <thermaldynamics:servo>],
-            [<immersiveengineering:sheetmetal:1>, <thermalfoundation:material:515>, <immersiveengineering:sheetmetal:1>]])e
+            [<immersiveengineering:sheetmetal:1>, <thermalfoundation:material:515>, <immersiveengineering:sheetmetal:1>]])
         .setFluid(<liquid:tin> * 144)
         .addTool(<ore:blacksmiths_hammer>, 250)
         .addOutput(<thermalexpansion:machine:5>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte}))
@@ -226,15 +226,46 @@ val plateIngots = {
     recipes.remove(<thermalexpansion:machine:6>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte}));
     Worktable.createRecipeBuilder("engineer")
         .setShaped([
-            [<minecraft:chest>, <thermaldynamics:servo>, <thermalexpansion:machine:6>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte})e],
-            [<thermaldynamics:servo>, <thermalexpansion:frame>, <thermaldynamics:servo>],
-            [<immersiveengineering:sheetmetal:1>, <thermalfoundation:material:515>, <immersiveengineering:sheetmetal:1>]])e
+            [<minecraft:chest>, <thermaldynamics:servo>, <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 0 as byte})],
+            [<immersiveengineering:metal_device1:1>, <thermalexpansion:frame>, <immersiveengineering:metal_device1:1>],
+            [<immersiveengineering:sheetmetal:1>, <thermalfoundation:material:515>, <immersiveengineering:sheetmetal:1>]])
         .setFluid(<liquid:tin> * 144)
         .addTool(<ore:blacksmiths_hammer>, 250)
         .addOutput(<thermalexpansion:machine:6>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte}))
         .create();
 
+    recipes.remove(<thermalexpansion:machine:7>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 2, 3, 3, 3, 3] as byte[] as byte[], Level: 0 as byte}));
+    Worktable.createRecipeBuilder("engineer")
+        .setShaped([
+            [<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 0 as byte}), <thermaldynamics:duct_16>, <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 0 as byte})],
+            [<betterwithmods:material:27>, <thermalexpansion:frame>, <betterwithmods:material:27>],
+            [<immersiveengineering:sheetmetal:1>, <thermalfoundation:material:513>, <immersiveengineering:sheetmetal:1>]])
+        .setFluid(<liquid:tin> * 144)
+        .addTool(<ore:blacksmiths_hammer>, 250)
+        .addOutput(<thermalexpansion:machine:7>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 2, 3, 3, 3, 3] as byte[] as byte[], Level: 0 as byte}))
+        .create();  
 
+    recipes.remove(<thermalexpansion:machine:8>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 2, 3, 3, 3, 3] as byte[] as byte[], Level: 0 as byte}));
+    Worktable.createRecipeBuilder("engineer")
+        .setShaped([
+            [<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 0 as byte}), <immersiveengineering:wooden_device0:7>, <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 0 as byte})],
+            [<thermaldynamics:servo>, <thermalexpansion:frame>, <thermaldynamics:servo>],
+            [<immersiveengineering:sheetmetal:1>, <thermalfoundation:material:513>, <immersiveengineering:sheetmetal:1>]])
+        .setFluid(<liquid:tin> * 144)
+        .addTool(<ore:blacksmiths_hammer>, 250)
+        .addOutput(<thermalexpansion:machine:8>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 2, 3, 3, 3, 3] as byte[] as byte[], Level: 0 as byte}))
+        .create();  
+
+    recipes.remove(<thermalexpansion:machine:9>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 2, 3, 3, 3, 3] as byte[] as byte[], Level: 0 as byte}));
+    Worktable.createRecipeBuilder("engineer")
+        .setShaped([
+            [<thermalexpansion:cell>.withTag({Recv: 1000, RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [2, 1, 1, 1, 1, 1] as byte[] as byte[], Level: 0 as byte, Send: 1000}), <thermalexpansion:capacitor>.withTag({Energy: 0}), <thermalexpansion:cell>.withTag({Recv: 1000, RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [2, 1, 1, 1, 1, 1] as byte[] as byte[], Level: 0 as byte, Send: 1000})],
+            [<thermaldynamics:servo>, <thermalexpansion:frame>, <thermaldynamics:servo>],
+            [<immersiveengineering:sheetmetal:1>, <thermalfoundation:material:513>, <immersiveengineering:sheetmetal:1>]])
+        .setFluid(<liquid:tin> * 144)
+        .addTool(<ore:blacksmiths_hammer>, 250)
+        .addOutput(<thermalexpansion:machine:9>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 2, 3, 3, 3, 3] as byte[] as byte[], Level: 0 as byte}))
+        .create(); 
 
     recipes.remove(<thermalexpansion:machine:15>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte}));
     Worktable.createRecipeBuilder("engineer")
@@ -245,7 +276,19 @@ val plateIngots = {
         .setFluid(<liquid:tin> * 144)
         .addTool(<ore:blacksmiths_hammer>, 250)
         .addOutput(<thermalexpansion:machine:15>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte}))
+        .create();
+
+    recipes.remove(<thermalexpansion:device>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [0, 1, 0, 0, 0, 0] as byte[] as byte[]}));
+    Worktable.createRecipeBuilder("engineer")
+        .setShaped([
+            [<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 0 as byte}), <tconstruct:tinker_tank_controller>, <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 0 as byte})],
+            [<thermaldynamics:servo>, <thermalexpansion:frame>, <thermaldynamics:servo>],
+            [<immersiveengineering:sheetmetal:1>, <thermalfoundation:material:513>, <immersiveengineering:sheetmetal:1>]])
+        .setFluid(<liquid:tin> * 144)
+        .addTool(<ore:blacksmiths_hammer>, 250)
+        .addOutput(<thermalexpansion:device>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [0, 1, 0, 0, 0, 0] as byte[] as byte[]}))
         .create();  
+  
 
 //Thermal Expansion Crafting Ingredients
     //Blacksmith
@@ -291,6 +334,9 @@ val plateIngots = {
         .create();
 
 //Thermal Expansion Energy Generation
+    //Normal
+recipes.addShaped(<thermalfoundation:material:288>, [[null, <ore:ingotSteel>, null], [<ore:ingotSteel>, <minecraft:iron_nugget>, <ore:ingotSteel>], [null, <ore:ingotSteel>, null]]);
+
     //Engineer
     recipes.remove(<thermalexpansion:dynamo>.withTag({RSControl: 0 as byte, Facing: 1 as byte, Energy: 0, Level: 0 as byte}));
     Worktable.createRecipeBuilder("engineer")
@@ -308,16 +354,20 @@ val plateIngots = {
 //Removed Recipes (currently locked)
 
 recipes.remove(<thermalexpansion:machine:4>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [3, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte}));
-recipes.remove(<thermalexpansion:machine:6>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte}));
-recipes.remove(<thermalexpansion:machine:7>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 2, 3, 3, 3, 3] as byte[] as byte[], Level: 0 as byte}));
-recipes.remove(<thermalexpansion:machine:8>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [3, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte}));
-recipes.remove(<thermalexpansion:machine:9>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte}));
 recipes.remove(<thermalexpansion:machine:10>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [3, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte}));
 recipes.remove(<thermalexpansion:machine:11>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte}));
 recipes.remove(<thermalexpansion:machine:12>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte}));
 recipes.remove(<thermalexpansion:machine:13>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte}));
 recipes.remove(<thermalexpansion:machine:14>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte}));
-recipes.remove(<thermalexpansion:device>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [0, 1, 0, 0, 0, 0] as byte[] as byte[]}));
+recipes.remove(<thermalexpansion:device:1>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [0, 1, 1, 1, 1, 1] as byte[] as byte[]}));
+recipes.remove(<thermalexpansion:device:2>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [0, 1, 1, 1, 1, 1] as byte[] as byte[]}));
+recipes.remove(<thermalexpansion:device:3>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [0, 1, 1, 1, 1, 1] as byte[] as byte[]}));
+recipes.remove(<thermalexpansion:device:4>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [0, 1, 1, 1, 1, 1] as byte[] as byte[]}));
+recipes.remove(<thermalexpansion:device:5>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [0, 1, 1, 1, 1, 1] as byte[] as byte[]}));
+recipes.remove(<thermalexpansion:device:6>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [0, 1, 1, 1, 1, 1] as byte[] as byte[]}));
+recipes.remove(<thermalexpansion:device:7>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [0, 1, 1, 1, 1, 1] as byte[] as byte[]}));
+recipes.remove(<thermalexpansion:device:8>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [0, 1, 1, 1, 1, 1] as byte[] as byte[]}));
+recipes.remove(<thermalexpansion:device:9>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [0, 1, 1, 1, 1, 1] as byte[] as byte[]}));
 recipes.remove(<thermalexpansion:dynamo:1>.withTag({RSControl: 0 as byte, Facing: 1 as byte, Energy: 0, Level: 0 as byte}));
 recipes.remove(<thermalexpansion:dynamo:2>.withTag({RSControl: 0 as byte, Facing: 1 as byte, Energy: 0, Level: 0 as byte}));
 recipes.remove(<thermalexpansion:dynamo:3>.withTag({RSControl: 0 as byte, Facing: 1 as byte, Energy: 0, Level: 0 as byte}));
