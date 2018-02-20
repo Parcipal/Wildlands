@@ -1,28 +1,25 @@
-Changelog 0.0.6.1: Hotfix
-
--Fixed: Artisans.zs script file error
-
-Changelog 0.0.6: we’re getting there
+Changelog 0.0.8: Thy Kingdom has commet
 
 
-First of: A quick apology for my Update cycle, it’s was not that great during the last days, but changing recipes for an hour is already exhausting enough. But I’m still out there and I’m still doing headsho… oh wait wrong theme!
-Anyways… Last Big Update for Industry/Tech mods, after that we’re shifting our attention on the magical aspect!
-
--Added: Career Bees (Even more Things for your Bees to do!)
--Added: Lag Goggles (This is pretty much for you Lag hunters out there, report anything that’s really suspicious to me :>)
+Getting a slightly longer update schedule is better for my sanity and will help me keeping the changes clean (I SAW YOU SERVOS)
 
 
+-Added: Wearable Backpacks
+
+
+-Updated: Apple Core
+-Updated: Artisan Worktables
+-Updated: CraftTweaker
 -Updated: Dynamic Surroundings
--Updated: Cyclops Core
--Updated: EvilCraft
--Updated: Dropt
+-Updated: Industrial Foregoing
+-Updated: Integration Foregoing
+-Updated: McJtyLib
+-Updated: ModTweaker
 
+-Changed: Reenabled most TE machines (some are still disabled [which I see no point in enabling])
+-Changed: Tree Growth accelerated (Tree’s actually grow now, although they still take quite a while [Changing Wood to an actual valuable ressource])
+-Changed: No more BWM console clutter
 
--Changed: Most Industrial Stuff is integrated into Worktables
--Changed: Started to work on some better Magic Gating
--Changed: Properly Gated Forestry
--Changed: Made some more TE Machinery available
--Changed: Made some MEK Machinery Available
-
--Fixed: Better Recipe for Pistons
-
+-Fixed: Gearboxes
+-Fixed: Artisan Worktables now have recipes
+-Fixed: New Steel Gear recipe
