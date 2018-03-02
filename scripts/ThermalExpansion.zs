@@ -28,17 +28,19 @@ val plateIngots = {
     <thermalfoundation:material:359> : <ore:ingotEnderium>
 } as IIngredient[IItemStack];
 
-#for plate, ingot in plateIngots {
-#    val builder = Worktable.createRecipeBuilder("blacksmith");
-#    Worktable.createRecipeBuilder.setShaped([
-#        [ingot],
-#        [ingot],
-#        [ingot]
-#    ])
-#    .addTool(<ore:blacksmiths_hammer>, 5)
-#    .addOutput(plate)
-#    .create();
-#}
+
+
+for plate, ingot in plateIngots {
+    val builder = Worktable.createRecipeBuilder("blacksmith");
+    builder.setShaped([
+        [ingot, ingot, ingot],
+        [null, null, null],
+        [null, null, null]
+    ])
+    .addTool(<ore:blacksmiths_hammer>, 5)
+    .addOutput(plate)
+    .create();
+}
 
 //Thermal Expansion Transportation
     //Blacksmith
