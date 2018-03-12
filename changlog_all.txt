@@ -1,5 +1,59 @@
-Changelog 0.0.6.1: Hotfix
+Changelog 0.0.8: Thy Kingdom has commet
 
+
+Getting a slightly longer update schedule is better for my sanity and will help me keeping the changes clean (I SAW YOU SERVOS)
+
+
+-Added: Wearable Backpacks
+
+
+-Updated: Apple Core
+-Updated: Artisan Worktables
+-Updated: CraftTweaker
+-Updated: Dynamic Surroundings
+-Updated: Industrial Foregoing
+-Updated: Integration Foregoing
+-Updated: McJtyLib
+-Updated: ModTweaker
+
+-Changed: Reenabled most TE machines (some are still disabled [which I see no point in enabling])
+-Changed: Tree Growth accelerated (Tree’s actually grow now, although they still take quite a while [Changing Wood to an actual valuable ressource])
+-Changed: No more BWM console clutter
+
+-Fixed: Gearboxes
+-Fixed: Artisan Worktables now have recipes
+-Fixed: New Steel Gear recipe
+
+
+Changelog 0.0.7: Finishing up some work
+
+
+Alright, this took a while (:S)
+First of we had a little glitch and broke CraftTweaker (apparently in every humanly possible way) And now I messed quite a few TE machines up (TE internal names are pure fun)
+But we’re getting back on track!
+This time I enabled more TE machinery, reworked some conduits and made a little test on Embers and Steel generation (Liquificated coal is good for something, atleast)
+The next update will be out once I get up, I’m nowhere near release happy with Mekanism and don’t want to go over that later.
+Expect Major Script Updates for Tech AND Magic, cuz looking 24/7 at tech is pretty boring
+
+Oh BTW We’re using ATLauncher now, so give me a DM with your Minecraft Username and I’ll add you to the Tester Team
+As a quick FYI:
+    We’re using Beyond Reality: Farscapes as a test pack, so once you’re added, you will have to either update your old Instance with the new “Dev-Wildlands-1.12.2” version or create a new one!
+
+-Added: None
+
+
+-Updated: Tinker’s Construct
+
+-Changed: Started to work on some better Magic Gating
+-Changed: Properly Gated Forestry (On it)
+-Changed: Made some more TE Machinery available (This time for real)
+
+-Fixed: Better Recipe for Pistons, WHICH WORK
+Fixed: Gearboxes are craftable once more!
+
+
+
+Changelog 0.0.6.1: Hotfix
 
 -Fixed: Artisans.zs script file error
 
