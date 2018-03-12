@@ -4,6 +4,20 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.tconstruct.Melting;
 import mods.tconstruct.Alloy;
+import mods.artisanworktables.builder.RecipeBuilder;
+
+val basic = RecipeBuilder.get("basic");
+val blacksmith = RecipeBuilder.get("blacksmith");
+val carpenter = RecipeBuilder.get("carpenter");
+val chef = RecipeBuilder.get("chef");
+val chemist = RecipeBuilder.get("chemist");
+val engineer = RecipeBuilder.get("engineer");
+val farmer = RecipeBuilder.get("farmer");
+val jeweler = RecipeBuilder.get("jeweler");
+val mage = RecipeBuilder.get("mage");
+val mason = RecipeBuilder.get("mason");
+val scribe = RecipeBuilder.get("scribe");
+val tailor = RecipeBuilder.get("tailor");
 
 //Fixes Oreberries
 val OreberryArray = [<oreberries:copper_oreberry>, <oreberries:iron_oreberry>, <oreberries:tin_oreberry>, <oreberries:aluminum_oreberry>, <oreberries:gold_oreberry>] as IItemStack[];
@@ -38,10 +52,4 @@ recipes.remove(<tconstruct:soil>);
 recipes.addShaped(<tconstruct:soil> * 4, [[<minecraft:gravel>, <embers:blend_caminite>, <minecraft:gravel>], [<embers:blend_caminite>, <ore:sand>, <embers:blend_caminite>], [<minecraft:gravel>, <embers:blend_caminite>, <minecraft:gravel>]]);
 
 //Parcipals changes to TiC Stuff
-mods.artisanworktables.Worktable.addRecipeShaped("mason", <tconstruct:seared:3> * 4, <ore:masons_trowel>, 5, false, [[<tconstruct:materials>, <earthworks:item_lime_plaster>, <tconstruct:materials>], [<earthworks:item_lime_plaster>, <tconstruct:materials>, <earthworks:item_lime_plaster>], [<tconstruct:materials>, <earthworks:item_lime_plaster>, <tconstruct:materials>]]);
-mods.artisanworktables.Worktable.addRecipeShaped("mason", <tconstruct:smeltery_io>, <ore:masons_trowel>, 50, false, [[<tconstruct:seared:3>, <minecraft:bucket>, <tconstruct:seared:3>], [<tconstruct:seared:3>, <tconstruct:materials:2>, <tconstruct:seared:3>], [<tconstruct:seared:3>, <minecraft:bucket>, <tconstruct:seared:3>]]);
-mods.artisanworktables.Worktable.addRecipeShaped("mason", <tconstruct:smeltery_controller>, <ore:masons_trowel>, 50, false, [[<tconstruct:seared:3>, <tconstruct:seared:3>, <tconstruct:seared:3>], [<tconstruct:seared:3>, null, <tconstruct:seared:3>], [<tconstruct:seared:3>, <tconstruct:seared:3>, <tconstruct:seared:3>]]);
-mods.artisanworktables.Worktable.addRecipeShaped("mason", <tconstruct:smeltery_controller>, <ore:masons_trowel>, 50, false, [[<tconstruct:seared:3>, <tconstruct:seared:3>, <tconstruct:seared:3>], [<tconstruct:seared:3>, <buildcraftfactory:tank>, <tconstruct:seared:3>], [<tconstruct:seared:3>, <tconstruct:seared:3>, <tconstruct:seared:3>]]);
-mods.artisanworktables.Worktable.addRecipeShaped("mason", <tconstruct:casting>, <ore:masons_trowel>, 50, false, [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>], [<tconstruct:seared:3>, null, <tconstruct:seared:3>], [<tconstruct:seared:3>, null, <tconstruct:seared:3>]]);
-mods.artisanworktables.Worktable.addRecipeShaped("mason", <tconstruct:casting:1>, <ore:masons_trowel>, 50, false, [[<tconstruct:seared:3>, null, <tconstruct:seared:3>], [<tconstruct:seared:3>, null, <tconstruct:seared:3>], [<tconstruct:seared:3>, <tconstruct:casting:1>, <tconstruct:seared:3>]]);
-
+//	Reworking this line
